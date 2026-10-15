@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controlador Modular Multizona Serie 8 Touch | EuroHeaters México</title>
+  <meta name="description" content="Controlador de temperatura industrial Serie 8 Touch para sistemas de colada caliente (Hot Runner). Gabinetes rack de 19 pulgadas de 2 a 48 zonas con función Soft-Start y respaldo por falla de termocupla.">
+
+  <!-- Estilos Corporativos -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- 1. Barra Superior Corporativa -->
+  <div class="top-header">
+    <div class="container">
+      <div class="top-info-left">
+        <span class="stock-pill">Disponibilidad Inmediata en México</span>
+        <span>Soporte Técnico y Calibración para la Industria del Plástico</span>
+      </div>
+      <div class="top-info-right">
+        <a href="tel:+525557757515" class="top-link">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+          +52 (55) 5775-7515
+        </a>
+        <a href="mailto:ventas@euroheaters.mx" class="top-link">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          ventas@euroheaters.mx
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Navegación Principal -->
+  <header class="main-nav">
+    <div class="container">
+      <a href="#" class="brand-wrapper">
+        <div class="brand-symbol">EH</div>
+        <div class="brand-text">
+          <span class="brand-name">EURO<span>HEATERS</span></span>
+          <span class="brand-tagline">Sistemas de Calefacción Industrial</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#" class="active">Productos</a></li>
+          <li><a href="#especificaciones">Especificaciones</a></li>
+          <li><a href="#beneficios">Aplicaciones</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <button type="button" class="nav-cta-btn trigger-quote-modal">Solicitar Cotización</button>
+          </li>
+          <li>
+            <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Cambiar tema visual" title="Alternar modo claro / oscuro">
+              <span id="themeIcon">🌙</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 3. Breadcrumbs -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <ul class="breadcrumb-list">
+        <li><a href="#">Inicio</a></li>
+        <li>/</li>
+        <li><a href="#">Productos</a></li>
+        <li>/</li>
+        <li><a href="#">Controladores de Temperatura</a></li>
+        <li>/</li>
+        <li class="breadcrumb-active">Serie 8 Touch (Hot Runner)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 4. Sección Principal del Producto -->
+  <main class="product-showcase">
+    <div class="container">
+      <div class="product-layout">
+
+        <!-- Columna Izquierda: Galería Limpia -->
+        <div class="gallery-container">
+          <div class="main-image-wrap">
+            <span class="image-badge-label" id="galleryViewBadge">Vista Frontal con Pantalla HMI</span>
+            <img id="mainProductImg" 
+                 src="assets/images/controller-main.jpg" 
+                 alt="Controlador modular para canales calientes EuroHeaters Serie 8 Touch">
+          </div>
+
+          <div class="thumbnails-row">
+            <button type="button" class="thumb-button active" data-view="1">
+              <img src="assets/images/controller-main.jpg" alt="Vista Frontal">
+              <span>1. Panel Frontal</span>
+            </button>
+            <button type="button" class="thumb-button" data-view="2">
+              <img src="assets/images/controller-module.jpg" alt="Módulo Serie 8">
+              <span>2. Módulo Extraíble</span>
+            </button>
+            <button type="button" class="thumb-button" data-view="3">
+              <img src="assets/images/controller-rear.jpg" alt="Panel Posterior">
+              <span>3. Panel Conexiones</span>
+            </button>
+          </div>
+
+          <div class="product-trust-strip">
+            <div class="trust-cell">
+              <strong>Garantía 2 Años</strong>
+              <span>Directa de fábrica</span>
+            </div>
+            <div class="trust-cell">
+              <strong>Certificación CE</strong>
+              <span>Estándar industrial</span>
+            </div>
+            <div class="trust-cell">
+              <strong>Refacciones en CDMX</strong>
+              <span>Entrega inmediata</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Información y Configuración -->
+        <div class="product-info-col">
+          <div class="product-classification">
+            <span class="category-label">Sistemas para Canales Calientes (Hot Runner)</span>
+            <span class="sku-tag">Modelo: EH-HR8000</span>
+          </div>
+
+          <h1 class="product-heading">Controlador Modular Multizona Serie 8 Touch</h1>
+
+          <p class="product-summary">
+            Diseñado para procesos de moldeo por inyección de plástico que exigen máxima precisión térmica y continuidad operativa. Incorpora <strong>algoritmo de autoajuste permanente (PID)</strong>, función <strong>Soft-Start</strong> para proteger resistencias nuevas y un sistema de <strong>compensación por falla de termocupla</strong> que mantiene el molde en producción sin paros no programados.
+          </p>
+
+          <!-- Cuadro de Configuración de Zonas -->
+          <div class="config-box">
+            <div class="config-box-title">
+              <span>Configuración del Equipo</span>
+              <small>Calculador de Gabinete</small>
+            </div>
+
+            <label class="config-label">1. Seleccione el número de zonas de su molde:</label>
+            <div class="zone-selector-row">
+              <button type="button" class="zone-chip" data-zones="4">4 Zonas</button>
+              <button type="button" class="zone-chip" data-zones="8">8 Zonas</button>
+              <button type="button" class="zone-chip active" data-zones="12">12 Zonas</button>
+              <button type="button" class="zone-chip" data-zones="24">24 Zonas</button>
+              <button type="button" class="zone-chip" data-zones="48">48 Zonas</button>
+            </div>
+
+            <label class="config-label">2. Capacidad por zona:</label>
+            <div class="amps-selector-row">
+              <button type="button" class="amp-chip active" data-amp="15">
+                <strong>15 Amperes por Zona</strong>
+                <span>Estándar para boquillas y puntas hot runner</span>
+              </button>
+              <button type="button" class="amp-chip" data-amp="30">
+                <strong>30 Amperes por Zona</strong>
+                <span>Para distribuidores manifold o boquillas grandes</span>
+              </button>
+            </div>
+
+            <div class="config-summary-bar">
+              <div class="summary-item">
+                <span>Potencia Calculada</span>
+                <strong id="specLivePower">26.4 kW</strong>
+              </div>
+              <div class="summary-item">
+                <span>Formato de Gabinete</span>
+                <strong id="specLiveRack">Rack 19" (6U)</strong>
+              </div>
+              <div class="summary-item">
+                <span>Disponibilidad</span>
+                <strong id="specLiveDelivery" style="color: var(--color-success);">Stock Inmediato</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Puntos Clave Técnicos -->
+          <ul class="feature-bullets">
+            <li>
+              <span class="bullet-icon">✔</span>
+              <span><strong>Función Soft-Start:</strong> Deshumidificación gradual de las resistencias para alargar su vida útil y evitar cortos por humedad.</span>
+            </li>
+            <li>
+              <span class="bullet-icon">✔</span>
+              <span><strong>Modo de seguridad (Fail-Safe):</strong> Si una termocupla se daña, conmuta a modo manual con el promedio de potencia histórica para que la inyección no se detenga.</span>
+            </li>
+            <li>
+              <span class="bullet-icon">✔</span>
+              <span><strong>Pantalla táctil a color HMI:</strong> Visualización simultánea de todas las zonas de temperatura y amperímetros por tarjeta.</span>
+            </li>
+            <li>
+              <span class="bullet-icon">✔</span>
+              <span><strong>Arquitectura Modular:</strong> Tarjetas extraíbles tipo *Plug & Play* que facilitan el mantenimiento sin desconectar todo el rack.</span>
+            </li>
+          </ul>
+
+          <!-- Botones de Conversión (CTAs) -->
+          <div class="action-buttons-group">
+            <div class="btn-row">
+              <button type="button" class="btn-primary-quote trigger-quote-modal">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+                <span>Solicitar Cotización Formal</span>
+              </button>
+
+              <a href="https://wa.me/525557757515?text=Hola,%20solicito%20cotizaci%C3%B3n%20para%20un%20Controlador%20EuroHeaters%20Serie%208" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn-whatsapp-chat">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.17L2 22l4.985-1.308C8.423 21.54 10.16 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2c-1.61 0-3.11-.48-4.37-1.3l-.31-.2-3.25.85.87-3.17-.2-.33C3.89 14.93 3.4 13.51 3.4 12c0-4.74 3.86-8.6 8.6-8.6 4.74 0 8.6 3.86 8.6 8.6 0 4.74-3.86 8.6-8.6 8.6z"/>
+                </svg>
+                <span>WhatsApp Técnico</span>
+              </a>
+            </div>
+
+            <p class="direct-help-text">
+              ¿Dudas sobre compatibilidad con su molde? Llámenos al <strong>+52 (55) 5775-7515</strong> (Lunes a Viernes de 8:00 a 18:30 hrs).
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- 5. Pestañas de Especificaciones Técnicas -->
+  <section class="specs-section" id="especificaciones">
+    <div class="container">
+      
+      <div class="tabs-header-bar">
+        <button type="button" class="tab-trigger active" data-tab="tab1">Especificaciones Técnicas</button>
+        <button type="button" class="tab-trigger" data-tab="tab2" id="beneficios">Ventajas en Producción</button>
+        <button type="button" class="tab-trigger" data-tab="tab3">Sectores y Aplicaciones</button>
+        <button type="button" class="tab-trigger" data-tab="tab4">Soporte y Garantía</button>
+      </div>
+
+      <!-- Pestaña 1: Tabla Técnica -->
+      <div class="tab-panel active" id="tab1">
+        <table class="tech-table">
+          <thead>
+            <tr>
+              <th>Parámetro</th>
+              <th>Especificación</th>
+              <th>Observaciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rango de Temperatura</td>
+              <td>0 °C a 500 °C (32 °F a 932 °F)</td>
+              <td>Precisión de control ±0.1 °C con sintonía PID automática</td>
+            </tr>
+            <tr>
+              <td>Tipos de Termocupla</td>
+              <td>Tipo J (Fe-CuNi) y Tipo K (NiCr-Ni)</td>
+              <td>Configurable directamente desde el panel o software</td>
+            </tr>
+            <tr>
+              <td>Control de Potencia</td>
+              <td>Ángulo de fase y cruce por cero</td>
+              <td>Entrega de potencia suave sin picos de corriente</td>
+            </tr>
+            <tr>
+              <td>Capacidad de Corriente</td>
+              <td>15 Amperes estándar / 30 Amperes opcional</td>
+              <td>Protección individual por fusible cerámico de acción rápida</td>
+            </tr>
+            <tr>
+              <td>Función de Arranque Suave</td>
+              <td>Soft-Start automático temporizado</td>
+              <td>Calentamiento inicial a 100 °C para expulsar humedad</td>
+            </tr>
+            <tr>
+              <td>Modo de Respaldo Fail-Safe</td>
+              <td>Automático por porcentaje de potencia</td>
+              <td>Permite finalizar el lote de inyección si el sensor se degüella</td>
+            </tr>
+            <tr>
+              <td>Formato Mecánico</td>
+              <td>Rack estándar de 19 pulgadas en aluminio</td>
+              <td>Conectores industriales tipo Harting en panel posterior</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Pestaña 2: Ventajas Operativas -->
+      <div class="tab-panel" id="tab2">
+        <div class="benefits-cards-grid">
+          <div class="benefit-box">
+            <div class="benefit-stat">-18%</div>
+            <h4>Reducción de Merma</h4>
+            <p>El control térmico estable evita rebabas, rechazos por tiros cortos y degradación del polímero en moldes de canal caliente.</p>
+          </div>
+          <div class="benefit-box">
+            <div class="benefit-stat">+40%</div>
+            <h4>Vida de Resistencias</h4>
+            <p>La rampa de Soft-Start protege las resistencias calefactoras del choque térmico al inicio de turno, evitando que se quemen.</p>
+          </div>
+          <div class="benefit-box">
+            <div class="benefit-stat">0 hrs</div>
+            <h4>Paros de Línea No Programados</h4>
+            <p>La compensación automática por falla de termocupla mantiene el molde en operación hasta el cambio programado de turno.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pestaña 3: Aplicaciones -->
+      <div class="tab-panel" id="tab3">
+        <div class="benefits-cards-grid">
+          <div class="benefit-box">
+            <h4>Industria Automotriz</h4>
+            <p>Moldeo de piezas interiores, manijas, componentes bajo cofre y partes con resinas técnicas como PA66, PBT y POM.</p>
+          </div>
+          <div class="benefit-box">
+            <h4>Tapas y Preformas PET</h4>
+            <p>Moldes de alta cavitación (de 16 a 72 cavidades) donde el equilibrio térmico exacto garantiza el peso y rosca de cada pieza.</p>
+          </div>
+          <div class="benefit-box">
+            <h4>Dispositivos Médicos</h4>
+            <p>Componentes de grado quirúrgico, jeringas y conectores fabricados en cuartos limpios bajo estrictas tolerancias.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pestaña 4: Soporte -->
+      <div class="tab-panel" id="tab4">
+        <div style="background: var(--bg-page); padding: 24px; border: 1px solid var(--border-light); border-radius: 4px;">
+          <h4 style="color: var(--text-title); font-size: 1.1rem; margin-bottom: 10px;">Respaldo y Servicio en México</h4>
+          <p style="color: var(--text-body); margin-bottom: 12px;">
+            En EuroHeaters México mantenemos inventario permanente de gabinetes, tarjetas de potencia Serie 8, termocuplas J y K, conectores industriales y refacciones para entrega inmediata en todo el país.
+          </p>
+          <p style="color: var(--text-body);">
+            Ofrecemos asesoría técnica en la selección y puesta en marcha de equipos para fabricantes de moldes y plantas transformadoras de plástico.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. Footer Corporativo -->
+  <footer class="main-footer" id="contacto">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 style="font-size: 1.1rem;">EuroHeaters México</h4>
+          <p style="margin-bottom: 10px;">
+            Especialistas en calentamiento eléctrico industrial, controladores de temperatura para canales calientes y soluciones térmicas de alta precisión.
+          </p>
+          <p><strong>Oficinas:</strong> Paseo de la Reforma 483, Of. 1450, Col. Cuauhtémoc, Ciudad de México, C.P. 06500</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Gama de Productos</h4>
+          <ul>
+            <li><a href="#">Controladores Modulares Serie 8</a></li>
+            <li><a href="#">Resistencias Tubulares y de Cartucho</a></li>
+            <li><a href="#">Termocuplas Industriales J y K</a></li>
+            <li><a href="#">Gabinetes Rack Personalizados</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto Directo</h4>
+          <p>Teléfono: +52 (55) 5775-7515</p>
+          <p>Correo: ventas@euroheaters.mx</p>
+          <p>Horario: Lunes a Viernes de 8:00 a 18:30 hrs</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>© 2026 EuroHeaters México. Todos los derechos reservados.</span>
+        <span>Presentación técnica para proceso de selección de diseño web industrial.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 7. Modal de Cotización Limpio -->
+  <div class="modal-overlay" id="quoteModal">
+    <div class="modal-card">
+      <div class="modal-top">
+        <h3>Solicitar Cotización de Equipo</h3>
+        <button type="button" class="modal-close" id="closeModalBtn">&times;</button>
+      </div>
+
+      <div class="modal-content">
+        <!-- Formulario -->
+        <div id="formSection">
+          <div class="modal-prefill-info" id="modalPrefillSummary">
+            Configuración: <strong>12 Zonas</strong> | <strong>15 Amperes</strong> | Rack 19" (6U)
+          </div>
+
+          <form id="quoteForm">
+            <div class="form-field-2col">
+              <div class="form-field">
+                <label for="txtName">Nombre completo *</label>
+                <input type="text" id="txtName" required placeholder="Ing. Roberto Méndez">
+              </div>
+              <div class="form-field">
+                <label for="txtCompany">Empresa o Planta *</label>
+                <input type="text" id="txtCompany" required placeholder="Plásticos del Bajío">
+              </div>
+            </div>
+
+            <div class="form-field-2col">
+              <div class="form-field">
+                <label for="txtEmail">Correo electrónico *</label>
+                <input type="email" id="txtEmail" required placeholder="rmendez@empresa.com">
+              </div>
+              <div class="form-field">
+                <label for="txtPhone">Teléfono o WhatsApp *</label>
+                <input type="tel" id="txtPhone" required placeholder="+52 55 1234 5678">
+              </div>
+            </div>
+
+            <div class="form-field-2col">
+              <div class="form-field">
+                <label for="selectModalZones">Número de Zonas</label>
+                <select id="selectModalZones">
+                  <option value="4">4 Zonas</option>
+                  <option value="8">8 Zonas</option>
+                  <option value="12" selected>12 Zonas (Recomendado)</option>
+                  <option value="24">24 Zonas</option>
+                  <option value="48">48 Zonas</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="txtCity">Ciudad / Estado de Entrega</label>
+                <input type="text" id="txtCity" placeholder="Querétaro, Qro.">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="txtNotes">Comentarios adicionales o características del molde (opcional)</label>
+              <textarea id="txtNotes" rows="3" placeholder="Indique modelo de máquina inyectora, conector requerido, etc."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit-form" id="btnSubmitForm">
+              Enviar Solicitud a Ingeniería
+            </button>
+          </form>
+        </div>
+
+        <!-- Confirmación de Éxito -->
+        <div id="successSection" class="modal-success-screen">
+          <div class="success-check-icon">✓</div>
+          <h4 style="font-size: 1.25rem; color: var(--text-title); margin-bottom: 8px;">¡Solicitud de Cotización Registrada!</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
+            Hemos recibido sus requerimientos técnicos. Un ingeniero especialista de EuroHeaters México se pondrá en contacto en breve con su propuesta formal.
+          </p>
+
+          <div class="ticket-folio">
+            FOLIO: <span id="folioSpan">EH-COT-584912</span>
+          </div>
+
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 16px;">
+            Para requerimientos urgentes o reposición por paro de línea, llámenos directamente al <strong>+52 (55) 5775-7515</strong> citando este folio.
+          </p>
+
+          <button type="button" class="btn-submit-form" id="btnFinishModal" style="max-width: 200px; margin: 0 auto; background: var(--bg-subtle); color: var(--text-title); border: 1px solid var(--border-light);">
+            Cerrar
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Limpio -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
